@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Bootstrap\build\css\custom.css" />
     <Content Include="Bootstrap\build\css\custom.min.css" />
     <Content Include="Bootstrap\build\images\back_disabled.png" />
@@ -3803,8 +3804,9 @@
     <Content Include="Bootstrap\vendors\validator\index.html" />
     <Content Include="Bootstrap\vendors\validator\multifield.js" />
     <Content Include="Bootstrap\vendors\validator\validator.js" />
-    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="UserDashboard.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -3826,6 +3828,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserDashboard.aspx.cs">
+      <DependentUpon>UserDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboard.aspx.designer.cs">
+      <DependentUpon>UserDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap\docs\fonts\fonts\fontawesome-webfont.eot" />
@@ -4891,6 +4907,7 @@
     <Content Include="Bootstrap\vendors\validator\README.md" />
     <Content Include="Admin\Admin.Master" />
     <None Include="packages.config" />
+    <Content Include="User\User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
