@@ -3803,7 +3803,7 @@
     <Content Include="Bootstrap\vendors\validator\index.html" />
     <Content Include="Bootstrap\vendors\validator\multifield.js" />
     <Content Include="Bootstrap\vendors\validator\validator.js" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -3815,11 +3815,11 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.aspx.cs">
+    <Compile Include="Admin\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
