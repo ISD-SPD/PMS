@@ -1499,7 +1499,7 @@ body .container.body .right_col {
 }
 
 body {
-	color: #73879C;
+	color: #000000;
 	background: #495057;
 	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
 	font-size: 13px;
@@ -1633,7 +1633,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 a {
-	color: #5A738E;
+	color: #000000;
 	text-decoration: none
 }
 
@@ -2103,7 +2103,7 @@ h2 {
 
 .accordion .panel-heading {
 	background: #F2F5F7;
-	padding: 13px;
+	padding: 8px;
 	width: 100%;
 	display: block
 }
