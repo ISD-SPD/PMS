@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="PMS.User" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,55 +18,64 @@
     <!-- jQuery custom content scroller -->
     <link href="../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
-    <link href="../Bootstrap/build/css/custom.min.css" rel="stylesheet">
+    <link href="../Bootstrap/build/css/user.min.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background-color: white;">
     <form id="frmUser" runat="server">
+        <nav class="navbar navbar-expand-lg" style="background-color: #1e1e40">
+            <a class="navbar-brand" href="#">
+                <img src="../Bootstrap/docs/images/PMSTempLogo.png" runat="server" class="brand-image img-rectangle elevation-3" style="height: 50px; width: 80px;" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-weight:bolder; font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:15px;" href="DR0.aspx"><i class="fa fa-file pull-left"></i>Create DR0</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-weight:bolder; font-size:18px;" href="#" id="StatusDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Progress
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:15px;" href="ProgressDR0.aspx"><i class="fa fa-battery-half pull-left"></i>DR Status</a>
+                            <div class="x_title"></div>
+                        <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:14px;" href="AddFunctions.aspx"><i class="fa fa-keyboard-o pull-left"></i>Add Functions</a>
+                        </div>
 
-        <!-- top navigation -->
-        <div class="top_nav">
-            <div class="nav_menu">
-                <div class="nav toggle">
-                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-                </div>
-                <nav class="nav navbar-nav">
-                    <ul class=" navbar-right">
-                        <li class="nav-item dropdown open" style="padding-left: 15px;">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                <img src="../Bootstrap/production/images/img.jpg" />John Doe
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item dropdown open" style="padding-left: 15px;">
+                        <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="UserNavbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                            <img src="../Bootstrap/docs/images/male.jfif" />Juan Dela Cruz
+                        </a>
+                        <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="UserNavbarDropdown">
+                            <a class="dropdown-item" href="javascript:;"><i class="fa fa-user pull-right"></i>Profile</a>
+                            <a class="dropdown-item" href="javascript:;"><i class="fa fa-toggle-on pull-right"></i>                
+                                <span>Settings</span>
                             </a>
-                            <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="javascript:;">Profile</a>
-                                <a class="dropdown-item" href="javascript:;">
-                                    <span class="badge bg-red pull-right">50%</span>
-                                    <span>Settings</span>
-                                </a>
-                                <a class="dropdown-item" href="javascript:;">Help</a>
-                                <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                            <a class="dropdown-item" href="javascript:;"><i class="fa fa-book pull-right"></i>Help</a>
+                            <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!-- /top navigation -->
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-      
-        
+        </nav>
+        <!-- page content -->     
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>                    
         <!-- footer content -->
-        <%--<footer>
-          <div class="pull-right">
-           <strong>Project Management System &copy; ISD 2022 .</strong> All rights reserved. Information Systems Department
-          </div>
-          <div class="clearfix"></div>
-        </footer>--%>
+        <footer>
+            <div class="pull-right">
+                <strong>Project Management System &copy; Epson Precision Philippines, Inc. (EPPI).</strong> All rights reserved, ISD-SPD 2022.
+            </div>          
+        </footer>
         <!-- /footer content -->
-
-
         <!-- jQuery -->
         <script src="../Bootstrap/vendors/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap -->
