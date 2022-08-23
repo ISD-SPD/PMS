@@ -138,17 +138,9 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-          <div class="">
-            <div class="page-title">
-              <div class="title_left">
-               
-        <div>
-            <asp:ContentPlaceHolder ID="CntBody" runat="server">
+              <asp:ContentPlaceHolder ID="CntBody" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
- 
-              </div>
-            </div>
+          <div class="">              
           </div>
         </div>
         <!-- /page content -->
