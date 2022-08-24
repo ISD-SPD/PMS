@@ -24,6 +24,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body style="background-color: white;">
+    <!-- Top Navigation Bar -->
     <form id="frmUser" runat="server">
         <nav class="navbar navbar-expand-lg" style="background-color: #1e1e40">
             <a class="navbar-brand" href="#">
@@ -35,18 +36,17 @@
                         <a class="nav-link dropdown-toggle" style="font-weight:bolder; font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:15px;" href="DR0.aspx"><i class="fa fa-file pull-left"></i>Create DR0</a>
+                            <a class="dropdown-item" style="text-align:center; font-size:13px;" href="RequestProject.aspx"><i class="fa fa-file pull-left"></i>Request Project</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="font-weight:bolder; font-size:18px;" href="#" id="StatusDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Progress
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:15px;" href="ProgressDR0.aspx"><i class="fa fa-battery-half pull-left"></i>DR Status</a>
+                            <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:13px;" href="ProjectStatus.aspx"><i class="fa fa-battery-half pull-left"></i>Project Status</a>
                             <div class="x_title"></div>
-                        <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:14px;" href="AddFunctions.aspx"><i class="fa fa-keyboard-o pull-left"></i>Add Functions</a>
+                        <a class="dropdown-item" style="text-align:center; font-weight:bolder; font-size:12px;" href="RequestFunction.aspx"><i class="fa fa-keyboard-o pull-left"></i>Request Functions</a>
                         </div>
-
                     </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">
@@ -66,6 +66,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- Top Navigation End -->
         <!-- page content -->     
                             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             </asp:ContentPlaceHolder>                    
@@ -88,6 +89,8 @@
         <script src="../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="../Bootstrap/build/js/custom.min.js"></script>
+         <!-- jQuery Smart Wizard -->     
+        <script src="../Bootstrap/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
     </form>
 </body>
 </html>

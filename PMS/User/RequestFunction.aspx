@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="AddFunctions.aspx.cs" Inherits="PMS.AddFunctions" %>
+﻿<%@ Page Title="PMS/Request Function" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="RequestFunction.aspx.cs" Inherits="PMS.AddFunctions" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -14,10 +14,9 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right" style="background-color: white;">
-                            <li class="breadcrumb-item font-weight-bolder"><a href="UserDashboard.aspx">Home</a></li>
-                            <li class="breadcrumb-item font-weight-bolder"><a href="ProgressDR0.aspx">DR0 Status</a></li>
-                            <li class="breadcrumb-item font-weight-bolder active">Add Functions</li>
-
+                            <li class="breadcrumb-item font-weight-bolder"><a href="Dashboard.aspx">Home</a></li>
+                            <li class="breadcrumb-item font-weight-bolder"><a href="ProjectStatus.aspx">DR0 Status</a></li>
+                            <li class="breadcrumb-item font-weight-bolder active">Request Functions</li>
                         </ol>
                     </div>
                 </div>
@@ -26,8 +25,8 @@
         </section>
         <!-- Main content -->
         <section="content">
-        <div class="card">
-            <!--Request Form Start -->
+         <div class="card">
+            <!--Request Function Start -->
             <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
@@ -35,11 +34,11 @@
                                 <ContentTemplate>
                                     <div class="card">                                       
                                        <div class="card-header" style="background-color:#1e1e40;">
-                                            <h class="card-title font-weight-bolder text-white"> DR0 Request Form</h>
+                                            <h class="card-title font-weight-bolder text-white"> Request Additional Functions</h>
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <asp:Label runat="server" ID="lblID" Width="150px">Project Control-ID:</asp:Label>
                                                         <asp:TextBox runat="server" CssClass="form-control" ID="txtID" Disabled="true"></asp:TextBox>
@@ -52,30 +51,16 @@
                                                         <asp:Label runat="server" ID="lblProjName" Font-Bold="true">Project Name:</asp:Label>
                                                         <asp:TextBox CssClass="form-control" runat="server" ID="txtProjName" Disabled="true" />
                                                     </div>    
-                                                    <div class="form-group">
+                                                   
+                                                </div>
+                                                <div class="col-sm-4">
+                                                     <div class="form-group">
                                                         <asp:Label runat="server" ID="lblFuncName" Font-Bold="true">Function Name:</asp:Label>
                                                         <asp:TextBox CssClass="form-control" runat="server" ID="txtFuncName" />
-                                                    </div>   
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <asp:Label runat="server" ID="lblProcess" Font-Bold="true">Process:</asp:Label>
-                                                        <asp:TextBox CssClass="form-control" runat="server" ID="txtProcess" Disabled="true" />
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <asp:Label runat="server" ID="lblPhase" Font-Bold="true">Phase:</asp:Label>
-                                                        <asp:DropDownList CssClass="form-control" runat="server" ID="ddlPhase" Disabled="true">
-                                                            <asp:ListItem Text="-- Choose --" Value="N/A"></asp:ListItem>
-                                                            <asp:ListItem Text="Phase 1" Value="1"></asp:ListItem>
-                                                            <asp:ListItem Text="Phase 2" Value="2"></asp:ListItem>
-                                                            <asp:ListItem Text="Phase 3" Value="3"></asp:ListItem>
-                                                            <asp:ListItem Text="Phase 4" Value="4"></asp:ListItem>
-                                                            <asp:ListItem Text="Phase 5" Value="5"></asp:ListItem>
-                                                        </asp:DropDownList>
-                                                    </div>
+                                                    </div>                 
                                                     <div class="form-group">
                                                         <asp:Label runat="server" ID="lblFuncDesc" Font-Bold="true">Function Description:</asp:Label>
-                                                        <asp:TextBox CssClass="form-control" runat="server" ID="txtFuncDesc" TextMode="MultiLine" />
+                                                        <asp:TextBox CssClass="form-control" runat="server" ID="txtFuncDesc" style="height:38px;" TextMode="MultiLine" />
                                                     </div>
                                                     <div class="form-group">
                                                         <asp:Label runat="server" ID="lblPriority" Font-Bold="true">Priority:</asp:Label>
@@ -89,9 +74,21 @@
                                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <asp:Label runat="server" ID="lblProcess" Font-Bold="true">Process:</asp:Label>
+                                                        <asp:TextBox CssClass="form-control" runat="server" ID="txtProcess" Disabled="true" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <asp:Label runat="server" ID="lblPhase" Font-Bold="true">Phase:</asp:Label>
+                                                        <asp:DropDownList CssClass="form-control" runat="server" ID="ddlPhase" Disabled="true">                                                            
+                                                        </asp:DropDownList>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div style="margin-left: 93%;">
-                                                <asp:Button CssClass="btn btn-dark" runat="server" ID="btnSave" Text="Save" Width="75px" />
+                                            <div class="pull-right">
+                                                <asp:Button CssClass="btn btn-dark" runat="server" ID="btnCancel" Text="Cancel" Width="75px" />
+                                                <asp:Button CssClass="btn btn-info" runat="server" ID="btnSave" Text="Save" Width="75px" />
                                             </div>
                                         </div>
                                     </div>
@@ -100,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+             </div>
         </section>
     </div>
 </asp:Content>

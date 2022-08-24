@@ -66,7 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="User\AddFunctions.aspx" />
+    <Content Include="User\FormWizard.aspx" />
+    <Content Include="User\RequestFunction.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Bootstrap\build\css\custom.css" />
     <Content Include="Bootstrap\build\css\custom.min.css" />
@@ -3810,19 +3811,26 @@
     <Content Include="Bootstrap\vendors\validator\index.html" />
     <Content Include="Bootstrap\vendors\validator\multifield.js" />
     <Content Include="Bootstrap\vendors\validator\validator.js" />
-    <Content Include="User\ProgressDR0.aspx" />
-    <Content Include="User\DR0.aspx" />
+    <Content Include="User\ProjectStatus.aspx" />
+    <Content Include="User\RequestProject.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="User\UserDashboard.aspx" />
+    <Content Include="User\Dashboard.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="User\AddFunctions.aspx.cs">
-      <DependentUpon>AddFunctions.aspx</DependentUpon>
+    <Compile Include="User\FormWizard.aspx.cs">
+      <DependentUpon>FormWizard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\AddFunctions.aspx.designer.cs">
-      <DependentUpon>AddFunctions.aspx</DependentUpon>
+    <Compile Include="User\FormWizard.aspx.designer.cs">
+      <DependentUpon>FormWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RequestFunction.aspx.cs">
+      <DependentUpon>RequestFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RequestFunction.aspx.designer.cs">
+      <DependentUpon>RequestFunction.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -3838,19 +3846,19 @@
     <Compile Include="Admin\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\ProgressDR0.aspx.cs">
-      <DependentUpon>ProgressDR0.aspx</DependentUpon>
+    <Compile Include="User\ProjectStatus.aspx.cs">
+      <DependentUpon>ProjectStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\ProgressDR0.aspx.designer.cs">
-      <DependentUpon>ProgressDR0.aspx</DependentUpon>
+    <Compile Include="User\ProjectStatus.aspx.designer.cs">
+      <DependentUpon>ProjectStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\DR0.aspx.cs">
-      <DependentUpon>DR0.aspx</DependentUpon>
+    <Compile Include="User\RequestProject.aspx.cs">
+      <DependentUpon>RequestProject.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\DR0.aspx.designer.cs">
-      <DependentUpon>DR0.aspx</DependentUpon>
+    <Compile Include="User\RequestProject.aspx.designer.cs">
+      <DependentUpon>RequestProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -3863,12 +3871,12 @@
     <Compile Include="User\User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
     </Compile>
-    <Compile Include="User\UserDashboard.aspx.cs">
-      <DependentUpon>UserDashboard.aspx</DependentUpon>
+    <Compile Include="User\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\UserDashboard.aspx.designer.cs">
-      <DependentUpon>UserDashboard.aspx</DependentUpon>
+    <Compile Include="User\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -96,6 +96,42 @@ namespace PMS
         protected global::System.Web.UI.WebControls.TextBox txtFuncName;
 
         /// <summary>
+        /// lblFuncDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFuncDesc;
+
+        /// <summary>
+        /// txtFuncDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFuncDesc;
+
+        /// <summary>
+        /// lblPriority control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPriority;
+
+        /// <summary>
+        /// ddlPriority control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPriority;
+
+        /// <summary>
         /// lblProcess control.
         /// </summary>
         /// <remarks>
@@ -132,40 +168,13 @@ namespace PMS
         protected global::System.Web.UI.WebControls.DropDownList ddlPhase;
 
         /// <summary>
-        /// lblFuncDesc control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFuncDesc;
-
-        /// <summary>
-        /// txtFuncDesc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFuncDesc;
-
-        /// <summary>
-        /// lblPriority control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPriority;
-
-        /// <summary>
-        /// ddlPriority control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPriority;
+        protected global::System.Web.UI.WebControls.Button btnCancel;
 
         /// <summary>
         /// btnSave control.

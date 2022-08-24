@@ -23,7 +23,7 @@ function SmartWizard(target, options) {
     this.buttons = {
         next : $('<a>'+options.labelNext+'</a>').attr("href","#").addClass("buttonNext"),
         previous : $('<a>'+options.labelPrevious+'</a>').attr("href","#").addClass("buttonPrevious"),
-        finish  : $('<a>'+options.labelFinish+'</a>').attr("href","#").addClass("buttonFinish")
+        Save  : $('<a>'+options.labelSave+'</a>').attr("href","#").addClass("buttonSave")
     };
 
     /*
@@ -52,7 +52,7 @@ function SmartWizard(target, options) {
         $this.elmStepContainer.append(allDivs);
         elmActionBar.append($this.loader);
         $this.target.append($this.elmStepContainer);
-        elmActionBar.append($this.buttons.finish)
+        elmActionBar.append($this.buttons.Save)
                     .append($this.buttons.next)
                     .append($this.buttons.previous);
         $this.target.append(elmActionBar);
@@ -66,11 +66,11 @@ function SmartWizard(target, options) {
             $this.goBackward();
             return false;
         });
-        $($this.buttons.finish).click(function() {
+        $($this.buttons.Save).click(function() {
             if(!$(this).hasClass('buttonDisabled')){
-                if($.isFunction($this.options.onFinish)) {
+                if($.isFunction($this.options.onSave)) {
                     var context = { fromStep: $this.curStepIdx + 1 };
-                    if(!$this.options.onFinish.call(this,$($this.steps), context)){
+                    if(!$this.options.onSave.call(this,$($this.steps), context)){
                         return false;
                     }
                 }else{
@@ -283,16 +283,16 @@ function SmartWizard(target, options) {
                 }
             }
         }
-        // Finish Button
-        if (! $this.steps.hasClass('disabled') || $this.options.enableFinishButton){
-            $($this.buttons.finish).removeClass("buttonDisabled");
+        // Save Button
+        if (! $this.steps.hasClass('disabled') || $this.options.enableSaveButton){
+            $($this.buttons.Save).removeClass("buttonDisabled");
             if ($this.options.hideButtonsOnDisabled) {
-                $($this.buttons.finish).show();
+                $($this.buttons.Save).show();
             }
         }else{
-            $($this.buttons.finish).addClass("buttonDisabled");
+            $($this.buttons.Save).addClass("buttonDisabled");
             if ($this.options.hideButtonsOnDisabled) {
-                $($this.buttons.finish).hide();
+                $($this.buttons.Save).hide();
             }
         }
     };
@@ -434,16 +434,16 @@ $.fn.smartWizard.defaults = {
     contentURL:null, // content url, Enables Ajax content loading
     contentCache:true, // cache step contents, if false content is fetched always from ajax url
     cycleSteps: false, // cycle step navigation
-    enableFinishButton: false, // make finish button enabled always
-	hideButtonsOnDisabled: false, // when the previous/next/finish buttons are disabled, hide them instead?
+    enableSaveButton: false, // make Save button enabled always
+	hideButtonsOnDisabled: false, // when the previous/next/Save buttons are disabled, hide them instead?
     errorSteps:[],    // Array Steps with errors
     labelNext:'Next',
     labelPrevious:'Previous',
-    labelFinish:'Finish',
+    labelSave:'Save',
     noForwardJumping: false,
     onLeaveStep: null, // triggers when leaving a step
     onShowStep: null,  // triggers when showing a step
-    onFinish: null  // triggers when Finish button is clicked
+    onSave: null  // triggers when Save button is clicked
 };
 
 })(jQuery);
