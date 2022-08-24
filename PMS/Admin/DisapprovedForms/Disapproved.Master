@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="PMS.Admin1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Disapproved.master.cs" Inherits="PMS.Admin.DisapprovedForms.Disapproved" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,25 +8,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Project Management System</title>
-
     <!-- Bootstrap -->
-    <link href="../Bootstrap/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Bootstrap/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link href="../Bootstrap/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../Bootstrap/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- NProgress -->
-    <link href="../Bootstrap/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../../Bootstrap/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- jQuery custom content scroller -->
-    <link href="../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
-
+    <link href="../../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
     <!-- Custom Theme Style -->
-    <link href="../Bootstrap/build/css/custom.min.css" rel="stylesheet">
+    <link href="../../Bootstrap/build/css/custom.min.css" rel="stylesheet">
+    <link href="../../Bootstrap/build/css/tabpills.css" rel="stylesheet" />
   </head>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-<body class="nav-md">
+  <body class="nav-md">
      <form id="frmAdmin" runat="server">
     <div class="container body">
       <div class="main_container">
@@ -37,12 +34,10 @@
             </div>
 
             <div class="clearfix"></div>
-
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="../Bootstrap/production/images/img.jpg" alt="..." class="img-circle profile_img">
-
+                <img src="../../Bootstrap/production/images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -50,9 +45,7 @@
               </div>
             </div>
             <!-- /menu profile quick info -->
-
             <br />
-
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
@@ -60,7 +53,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="Dashboard.aspx">Dashboard</a></li>
+                      <li><a href="../Dashboard.aspx">Dashboard</a></li>
                       <li><a href="#">Dashboard2</a></li>
                       <li><a href="#">Dashboard3</a></li>
                     </ul>
@@ -74,11 +67,7 @@
                       <li><a href="#">Form Upload</a></li>
                       <li><a href="#">Form Buttons</a></li>
                     </ul>
-                  </li>
-     
-              
-           
-               
+                  </li>                     
                 </ul>
               </div>
 
@@ -114,7 +103,7 @@
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                      <img src="../Bootstrap/production/images/img.jpg" />John Doe
+                      <img src="../../Bootstrap/production/images/img.jpg" />John Doe
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -135,8 +124,40 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
-              <asp:ContentPlaceHolder ID="CntBody" runat="server">
+<div class="right_col" role="main">
+<div class="page-title">
+<div class="title_left">
+<h3>Disapproved Design Review</h3>
+</div>
+</div>
+<div class="col-sm-6">
+<ol class="breadcrumb float-sm-right" style="background-color:#f7f7f7;">
+<li class="breadcrumb-item font-weight-bolder"><a href="Pending.aspx" style="color:gray;">Pending</a></li>
+<li class="breadcrumb-item font-weight-bolder"><a href="../ApprovedForms/DR0.aspx" style="color:gray;">Approved</a></li>
+<li class="breadcrumb-item font-weight-bolder"><a href="DR0.aspx">Disapproved</a></li>
+</ol>
+</div>
+<div class="clearfix"></div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+<li class="nav-item" role="presentation">  
+<a href="DR0.aspx" class="nav-link <% Response.Write(DR0); %>" data-bs-toggle="tab"  role="tab"  aria-controls="DRO">Disapproved DR0 <span class="badge bg-red pull-right">4</span> </a>
+</li>
+<li class="nav-item" role="presentation">
+<a href="DR1.aspx" class="nav-link <% Response.Write(DR1); %>" data-bs-toggle="tab"  role="tab"  aria-controls="DR1">Disapproved DR1 <span class="badge bg-red pull-right">4</span> </a>
+</li>
+<li class="nav-item" role="presentation">
+<a href="DR2.aspx" class="nav-link <% Response.Write(DR2); %>" data-bs-toggle="tab"  role="tab"  aria-controls="DR2">Disapproved DR2 <span class="badge bg-red pull-right">4</span> </a>
+</li>
+<li class="nav-item" role="presentation">
+<a href="DR3.aspx" class="nav-link <% Response.Write(DR3); %>" data-bs-toggle="tab"  role="tab"  aria-controls="DR3">Disapproved DR3 <span class="badge bg-red pull-right">4</span> </a>
+</li>
+<li class="nav-item" role="presentation">
+<a href="DR4.aspx" class="nav-link <% Response.Write(DR4); %>" data-bs-toggle="tab"  role="tab"  aria-controls="DR4">Disapproved DR4 <span class="badge bg-red pull-right">4</span> </a>
+</li>
+<li>
+</li>
+</ul> 
+            <asp:ContentPlaceHolder ID="CntBody" runat="server">
             </asp:ContentPlaceHolder>
           <div class="">              
           </div>
@@ -155,22 +176,21 @@
     </div>
    
        <!-- jQuery -->
-    <script src="../Bootstrap/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../Bootstrap/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-   <script src="../Bootstrap/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="../../Bootstrap/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FastClick -->
-    <script src="../Bootstrap/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../../Bootstrap/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../Bootstrap/vendors/nprogress/nprogress.js"></script>
+    <script src="../../Bootstrap/vendors/nprogress/nprogress.js"></script>
     <!-- jQuery custom content scroller -->
-    <script src="../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../Bootstrap/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="../Bootstrap/build/js/custom.min.js"></script>
+    <script src="../../Bootstrap/build/js/custom.min.js"></script>
 <asp:ContentPlaceHolder runat="server" ID="Javascript">
 
 </asp:ContentPlaceHolder>
   </form>
 </body>
 </html>
-

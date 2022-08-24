@@ -24,27 +24,27 @@
 <!-- start accordion -->
 <div class="accordion" " role="tablist" aria-multiselectable="true">
 <div class="panel">
-<a class="panel-heading" role="tab"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<a class="panel-heading" href="PendingForms/DR0.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 0 <span class="badge bg-warning pull-right">6</span></h4>   
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<a class="panel-heading" href="ApprovedForms/DR1.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 1 <span class="badge bg-warning pull-right">4</span></h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR2.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 2 <span class="badge bg-warning pull-right">9</span> </h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR3.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 3 <span class="badge bg-warning pull-right">2</span> </h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR4.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 4 <span class="badge bg-warning pull-right">5</span> </h4>
 </a>
 </div>
@@ -70,27 +70,27 @@
 <!-- start accordion -->
 <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 <div class="panel">
-<a class="panel-heading" role="tab"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<a class="panel-heading" href="ApprovedForms/DR0.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 0 <span class="badge bg-green pull-right">100</span></h4>   
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<a class="panel-heading" href="ApprovedForms/DR1.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 1<span class="badge bg-green pull-right">100</span> </h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR2.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 2 <span class="badge bg-green pull-right">100</span></h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR3.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 3<span class="badge bg-green pull-right">100</span></h4>
 </a>
 </div>
 <div class="panel">
-<a class="panel-heading collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<a class="panel-heading" href="ApprovedForms/DR4.aspx" aria-expanded="true" aria-controls="collapseOne">
 <h4 class="panel-title">Design Review 4 <span class="badge bg-green pull-right">100</span></h4>
 </a>
 </div>
