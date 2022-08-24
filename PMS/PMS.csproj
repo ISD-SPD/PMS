@@ -66,6 +66,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\ApprovedForms\DR0.aspx" />
+    <Content Include="Admin\ApprovedForms\DR1.aspx" />
+    <Content Include="Admin\ApprovedForms\DR2.aspx" />
+    <Content Include="Admin\ApprovedForms\DR3.aspx" />
+    <Content Include="Admin\ApprovedForms\DR4.aspx" />
+    <Content Include="Admin\DisapprovedForms\DR0.aspx" />
+    <Content Include="Admin\DisapprovedForms\DR1.aspx" />
+    <Content Include="Admin\DisapprovedForms\DR2.aspx" />
+    <Content Include="Admin\DisapprovedForms\DR3.aspx" />
+    <Content Include="Admin\DisapprovedForms\DR4.aspx" />
+    <Content Include="Bootstrap\build\css\tabpills.css" />
     <Content Include="User\AddFunctions.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Bootstrap\build\css\custom.css" />
@@ -3817,6 +3828,90 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ApprovedForms\Approved.Master.cs">
+      <DependentUpon>Approved.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\Approved.Master.designer.cs">
+      <DependentUpon>Approved.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR0.aspx.cs">
+      <DependentUpon>DR0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR0.aspx.designer.cs">
+      <DependentUpon>DR0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR1.aspx.cs">
+      <DependentUpon>DR1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR1.aspx.designer.cs">
+      <DependentUpon>DR1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR2.aspx.cs">
+      <DependentUpon>DR2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR2.aspx.designer.cs">
+      <DependentUpon>DR2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR3.aspx.cs">
+      <DependentUpon>DR3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR3.aspx.designer.cs">
+      <DependentUpon>DR3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR4.aspx.cs">
+      <DependentUpon>DR4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApprovedForms\DR4.aspx.designer.cs">
+      <DependentUpon>DR4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\Disapproved.Master.cs">
+      <DependentUpon>Disapproved.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\Disapproved.Master.designer.cs">
+      <DependentUpon>Disapproved.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR0.aspx.cs">
+      <DependentUpon>DR0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR0.aspx.designer.cs">
+      <DependentUpon>DR0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR1.aspx.cs">
+      <DependentUpon>DR1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR1.aspx.designer.cs">
+      <DependentUpon>DR1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR2.aspx.cs">
+      <DependentUpon>DR2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR2.aspx.designer.cs">
+      <DependentUpon>DR2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR3.aspx.cs">
+      <DependentUpon>DR3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR3.aspx.designer.cs">
+      <DependentUpon>DR3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR4.aspx.cs">
+      <DependentUpon>DR4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DisapprovedForms\DR4.aspx.designer.cs">
+      <DependentUpon>DR4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\AddFunctions.aspx.cs">
       <DependentUpon>AddFunctions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4934,6 +5029,8 @@
     <Content Include="Bootstrap\vendors\validator\package.json" />
     <Content Include="Bootstrap\vendors\validator\README.md" />
     <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\ApprovedForms\Approved.Master" />
+    <Content Include="Admin\DisapprovedForms\Disapproved.Master" />
     <None Include="packages.config" />
     <Content Include="User\User.Master" />
     <None Include="Web.Debug.config">
@@ -4944,6 +5041,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\PendingForms\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
